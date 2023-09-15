@@ -83,7 +83,7 @@ print(float(int_a))
 # - 아무런 값을 갖지 않을 때 사용한다.
 # - 일반적으로 변수가 초기값을 갖지 않게 하고 생성할 때 사용
 # - 기타 언어의 NUll과 같은 의미로 사용
-pritn("="*200)
+print("="*200)
 
 # C. JAVA: 변수 생성 -> int num;
 # Python : 변수 생성 -> num(Error)
@@ -105,7 +105,7 @@ student_naem = ""   # 적극 권장!
 
 # 6. 변수(variable)
 # - 변수: 하나의 값을 저장할 수 있는 메모리 공간
-print("=")*200
+print("="*200)
 num = 4
 num = 10
 print(num) # 출력: 10
@@ -117,3 +117,65 @@ print(num) # 출력: 10
 #   * 동등연사자(==): Equal
 #   * 초기화 : 초기 변수를 생성하면 쓰레기 파일들이 존재
 #             변수에 값을 대입하면 공간이 초기화 되고 값만 저장!
+
+# name(변수선언) = (대입문자열)
+name = "charmming"
+
+# 7.명명규칙(Naming Rule)
+# * 변수, 함수, 클래스 등의 사용자 정의 이름에 사용
+# * 명확하고 알아보기 쉽게!!
+#
+#   1. 영문 대소문자, 숫자, 특수문자(_)만 사용
+#   2. 숫자로 시작할 수 없음
+#     abc1(0), 1abc(x)
+#   3. 영어 대소문자 구별
+#    abc ABC Abc ABc abC 모두 다른 변수로 인식
+#   4. 예약어 사용 불가
+#     예약어: Python 에서 미리 선점하여 사용중인 키워드
+#      ex)print, for, while, if, else, class,
+#       and, return, import, def, pass, ...
+#
+#
+# 8.Naming Method
+# - 변수, 함수, 클래스 등의 사용자 정의 이름에
+# 사용하는 기법
+# - 프로그래밍 언어별로 사용하는 Naming Method가 다르다
+
+#   1. snake_case:  소문자만 사용, 합성어는 _사용
+#       ex) chosun_student_name
+#   2. camelCase: 첫글자 소무낮, 합성어 첫글자 대문자
+#       ex) chosunStudentName
+#   3.PascalCase: 첫글자 대문자, 합성어 첫글자 대문자
+#       ex) ChosunStudentName
+
+
+#            변수          함수            클래스
+# Java, C  cmelCase     camelCase()     PascalCase
+# Python  snake_case    snake_case()    PascalCase
+
+# 9.동적 출력
+print("="*200)
+student_num = 20203196
+student_name = "Borr"
+# 출력 예: "조선대학교 20203196, Borr입니다."
+#print("조선대학교 20203196, Borr입니다.")   // 하드 코딩 지양, 정적출력
+
+# 동적 출력하는 방법
+# 1.format()
+print("조선대학교 {}, {} 입니다.".format(student_num, student_name))
+#2. f_string - NEW
+print(f"조선대학교 {student_num} , {student_name}입니다.")
+
+# * : 곱하기
+# ** or ^ : 제곱 ex)3^2
+# 5/2 : 나누기         2.5
+# 5%2 : 나누기(나머지)  1
+# 5//2 : 나누기(몫)     2
+
+
+
+# Quiz
+num = 9
+num - 1
+num + 2
+print(num)
