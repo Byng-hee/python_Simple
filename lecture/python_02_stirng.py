@@ -61,4 +61,3 @@ print(msg[:])   # 처음부터 끝까지
 # msg에서 "need"만 추출
 # 정방향
 # 역방향
-print(msg[])
