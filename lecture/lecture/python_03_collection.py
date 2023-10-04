@@ -186,3 +186,11 @@ print(abc)
 #quiz
 a = {}
 print(type(a))
+
+# List Tuple 은 시퀀스 자료형이다. unpacking packing가능
+#   List는 [] 사용, 수정 가능 // Tuple은 () 수정 불가!!!(1,2,3) =>1,2,3 (1) => 1,
+#  Dict Set은 복주머니를 생각해라! 순서없이 뒤죽박죽 임 해서 시퀀스 자료형이 아니고 인덱스
+# Set{} - 중복값 허용x
+# list(),  tuple(),  set()   {} 단독 사용은 dict형임
+# 4가지 형태는 반드시 알아야될듯.
+# Dict: JSON(데이터 전송 포맷) 둘이 형태가 완전 같음 해서 완전 중요 */

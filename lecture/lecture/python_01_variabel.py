@@ -12,7 +12,7 @@ print("Hello Python")
 # C, Java: ''(char), ""(string) ex)putchar('')
 print("="*200)
 # 참고: Escpae Code
-# - 문법 : \(역 슬래쉬) + @
+# - 문법 : \(역 슬래쉬) + *
 # - 문자열(string) 내의 일부 문자의 의미를 달리하여 특정한 효과 주기
 # - 예) \n: 한 줄 개행, \t: 탭(8칸 공백)
 
@@ -85,11 +85,11 @@ print(float(int_a))
 # - 기타 언어의 NUll과 같은 의미로 사용
 print("="*200)
 
-# C. JAVA: 변수 생성 -> int num;
+# C, JAVA: 변수 생성 -> int num;
 # Python : 변수 생성 -> num(Error)
 # Python : 변수 생성 -> num = None
 # studnet_name 변수를 이렇게 생성하면 값 호출
-student_name = None # 절대 상용 금지!
+student_name = None # 절대 사용 금지!
 student_naem = ""   # 적극 권장!
 
 # "Null pointer Exception" 프로그램 종료 시켜버림!!!!!!
